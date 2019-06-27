@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbproxy>
+    <host>127.0.0.1</host>
+    <port>8766</port>
+    <max_file_size>1024<max_file_size>
+    <max_processor>1</max_processor>
+    <max_bind_times>5</max_bind_times>
+    <databases>
+    <master>
+        <database index="0">
+            <host>10.152.8.198</host>
+            <port>3306</port>
+            <user>root</root>
+            <password>binlog</password>
+        </database>
+        <database index="1">
+            <host>10.152.8.198</host>
+            <port>3306</port>
+            <user>root</root>
+            <password>binlog</password>
+        </database>
+    </master>
+    <slaves>
+        <slave index="0">
+        <database index="0">
+            <host>10.152.8.198</host>
+            <port>3306</port>
+            <user>root</root>
+            <password>binlog</password>
+        </database>
+        <database index="1">
+            <host>10.152.8.198</host>
+            <port>3306</port>
+            <user>root</root>
+            <password>binlog</password>
+        </database>
+        </slave>
+        <slave index="1">
+            <database index="0">
+            <host>10.152.8.198</host>
+            <port>3306</port>
+            <user>root</root>
+            <password>binlog</password>
+        </database>
+        <database index="1">
+            <host>10.152.8.198</host>
+            <port>3306</port>
+            <user>root</root>
+            <password>binlog</password>
+        </database>
+        </slave>
+    <slaves>
+    </databases>
+</dbproxy>
