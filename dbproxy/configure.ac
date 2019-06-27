@@ -1,5 +1,5 @@
 AC_PREREQ(2.59)
-AC_INIT(rdt, 1.0.0.0, isold.wang@gmail.com)
+AC_INIT(dbproxy, 1.0.0.0, isold.wang@gmail.com)
 AC_CONFIG_SRCDIR([config.h.in])
 AC_CONFIG_HEADER([config.h])
 
@@ -73,7 +73,7 @@ AC_SUBST([PROTOC])
 
 AC_CONFIG_FILES([Makefile
 		common/src/Makefile
-        dbproxy/src/Makefile
-        dbproxy/test/Makefile
+        	dbproxy/src/Makefile
+        	dbproxy/test/Makefile
 		])
 AC_OUTPUT
