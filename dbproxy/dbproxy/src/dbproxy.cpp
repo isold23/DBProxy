@@ -12,19 +12,19 @@ CDebugTrace* goDebugTrace = NULL;
 void help_info()
 {
     std::cout << "DB Proxy Server Help Infomation:" << std::endl;
-    std::cout << "./dns -f config_file_name" << std::endl;
-    std::cout << "./dns -v (dbproxy server version information)" << std::endl;
-    std::cout << "./dns -h(dbproxy server help infomation)" << std::endl;
-    std::cout << "Copyright (C) Beijing Sogou Information Technology Co.,Ltd 2016-2018" << std::endl;
+    std::cout << "./dbproxy -f config_file_name" << std::endl;
+    std::cout << "./dbproxy -v (dbproxy server version information)" << std::endl;
+    std::cout << "./dbproxy -h(dbproxy server help infomation)" << std::endl;
+    std::cout << "Copyright (C) Beijing longyu23 Information Technology Co.,Ltd 2016-2019" << std::endl;
 };
 
 
 int main(int argc, char* argv[])
 {
     if(argc > 1 && strcmp(argv[1], "-v") == 0) {
-        std::cout << "SinaShow DNS Version Infomation:" << std::endl;
-        std::cout << "Dispatch Node Server Version: " << g_strServerVersion.c_str() << std::endl;
-        std::cout << "Copyright (C) Beijing Sina Information Technology Co.,Ltd 2003-2009" << std::endl;
+        std::cout << "database proxy Version Infomation:" << std::endl;
+        std::cout << "database proxy Server Version: " << g_strServerVersion.c_str() << std::endl;
+        std::cout << "Copyright (C) Beijing longyu23 Information Technology Co.,Ltd 2016-2019" << std::endl;
         return 0;
     }
     
